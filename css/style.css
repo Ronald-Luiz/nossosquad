@@ -40,6 +40,7 @@ width:250px;
   height:auto;
   width: auto;
  border: 5px solid black;
+ border-radius:15px;
  
 }
 
@@ -356,7 +357,7 @@ width:250px;
   height:auto;
   width: 250px;
  border: 5px solid black;
- 
+ border-radius:15px;
 }
 
 
