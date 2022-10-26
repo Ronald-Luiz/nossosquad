@@ -21,10 +21,6 @@ body {
 }
 
 
-.card-img-top{
-height:180px;
-width:250px;
-}
 
 
 .card-text{
@@ -32,11 +28,18 @@ width:250px;
 }
 
 
+
+.card-img-top{
+height:180px;
+width:250px;
+}
+
+
 .card-group{
   overflow: auto;
   height:auto;
   width: auto;
- border: 5px solid red;
+ border: 5px solid black;
  
 }
 
@@ -338,6 +341,31 @@ h4{
   .menu-button-container {
     display: flex;
   }
+
+
+
+
+.card-img-top{
+height:180px;
+width:250px;
+}
+
+
+.card-group{
+  overflow: auto;
+  height:auto;
+  width: 250px;
+ border: 5px solid black;
+ 
+}
+
+
+
+
+
+
+
+
 
 body{
 
