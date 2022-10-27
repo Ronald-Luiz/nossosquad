@@ -41,30 +41,11 @@ rec.addEventListener('click',(event) =>{
 })
 
 
-let pg = document.getElementById('pk');
-if(pg.clicked){
-    document.getElementById('lkj').style.display = "block";
-}
+
   
-pg.addEventListener('click', () =>{
-  document.getElementById('lkj').style.display = "block";
-
-})
-
-let telk = document.getElementById('kl');
-telk.addEventListener('click', (event) => {
-event.preventDefault();
-let jj = "um sms foi enviado com as devidas instruções";
-let kk = "insira no formato solicitado";
-let vtel = document.getElementById('telxd').value;
-if(vtel == 2199997777){
-  alert(jj);
-}else{
-  alert(kk);
-}
 
 
-}) 
+
 
 
 
