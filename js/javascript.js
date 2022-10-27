@@ -33,9 +33,9 @@ rec.addEventListener('click',(event) =>{
   let mec = "insira um e-mail válido";
   let ml = document.getElementById('xp').value;
   if(ml == "admin@gmail.com" ){
-     swal(msg);
+    alert(msg);
   }else{
-    swal(mec);
+    alert(mec);
     
   }
 })
@@ -58,9 +58,9 @@ let jj = "um sms foi enviado com as devidas instruções";
 let kk = "insira no formato solicitado";
 let vtel = document.getElementById('telxd').value;
 if(vtel == 2199997777){
-  swal(jj);
+  alert(jj);
 }else{
-  swal(kk);
+  alert(kk);
 }
 
 
