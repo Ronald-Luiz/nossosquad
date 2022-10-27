@@ -252,7 +252,8 @@ h4{
   
 
 
-  float:left;
+  float:center;
+  position:center;
   color: rgb(85, 82, 82);
   text-align: center;
 }
