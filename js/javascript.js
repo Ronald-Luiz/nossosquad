@@ -25,14 +25,17 @@ function Login() {
 }
 
 
+
 let rec = document.getElementById('px');
 rec.addEventListener('click',(event) =>{
   event.preventDefault();
+  let msg = "um link de recuperação de senha foi enviado ao seu email";
+  let mec = "insira um e-mail válido";
   let ml = document.getElementById('xp').value;
   if(ml == "admin@gmail.com" ){
-     swal("um link de recuperação de senha foi enviado ao seu email");
+     swal(msg);
   }else{
-    swal("insira um e-mail válido");
+    swal(mec);
     
   }
 })
@@ -51,11 +54,13 @@ pg.addEventListener('click', () =>{
 let telk = document.getElementById('kl');
 telk.addEventListener('click', (event) => {
 event.preventDefault();
+let jj = "um sms foi enviado com as devidas instruções";
+let kk = "insira no formato solicitado";
 let vtel = document.getElementById('telxd').value;
 if(vtel == 2199997777){
-  swal("um sms foi enviado com as devidas instruções");
+  swal(jj);
 }else{
-  swal("insira no formato solicitado");
+  swal(kk);
 }
 
 
