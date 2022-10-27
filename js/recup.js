@@ -12,6 +12,10 @@ rec.addEventListener('click',(event) =>{
 
 
 let pg = document.getElementById('pk');
+if(pg.clicked){
+    document.getElementById('lkj').style.display = "block";
+}
+  
 pg.addEventListener('click', () =>{
   document.getElementById('lkj').style.display = "block";
 
