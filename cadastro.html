@@ -8,61 +8,17 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.104.2">
     <title>PROVEDOR</title>
-    <link rel="canonical" href="css/style.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
 
     <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-
-        .b-example-divider {
-            height: 3rem;
-            background-color: rgba(0, 0, 0, .1);
-            border: solid rgba(0, 0, 0, .15);
-            border-width: 1px 0;
-            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-        }
-
-        .b-example-vr {
-            flex-shrink: 0;
-            width: 1.5rem;
-            height: 100vh;
-        }
-
-        .bi {
-            vertical-align: -.125em;
-            fill: currentColor;
-        }
-
-        .nav-scroller {
-            position: relative;
-            z-index: 2;
-            height: 2.75rem;
-            overflow-y: hidden;
-        }
-
-        .nav-scroller .nav {
-            display: flex;
-            flex-wrap: nowrap;
-            padding-bottom: 1rem;
-            margin-top: -1px;
-            overflow-x: auto;
-            text-align: center;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch;
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
         }
     </style>
 
@@ -71,32 +27,97 @@
 </head>
 
 <body class="bg-light">
+    <header>
+        <div class="cabecalho">
 
-    <div class="container">
+            <section class="top-nav">
+                <div>
+                    <a href="index.html">
+                        <img src="img/nbc.png">
+                    </a>
+                </div>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
+                    <button class="btn btn-outline-dark">
+                        <li>
+                            <a href="index.html" style="color:white">Inicio</a>
+                        </li>
+                    </button>
+                    <button class="btn btn-outline-dark">
+                        <li>
+                            <a href="contatos.html" style="color:white">Contatos</a>
+                            </i>
+                    </button>
+                    <button class="btn btn-outline-dark">
+                        <li>
+                            <a href="servicos.html" style="color:white">Serviços</a>
+                            </i>
+                    </button>
+                    <button class="btn btn-outline-dark">
+                        <li>
+                            <a href="login.html" style="color:white">login</a>
+                            </i>
+                    </button>
+                    <button class="btn btn-outline-dark">
+                        <li>
+                            <a href="cadastro.html" style="color:white">Cadastrar</a>
+                            </i>
+                    </button>
+                </ul>
+            </section>
+            <img id="capa" src="img/CAPA.svg">
+
+
+
+            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+                <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94"
+                        role="img">
+                        <title>Projeto Squad</title>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="containerForm">
         <main>
 
             <div class="row g-3 justify-content-center">
                 <div class="col-md-7 col-lg-8">
-                    <h4 class="mb-3">Cadastro</h4>
+                    <div class="formTitle">CADASTRO</div>
+                    <hr class="my-4">
                     <form class="needs-validation" novalidate>
                         <div class="row g-3">
-                            <div class="col-sm-6">
+                            <div class="col-sm-4">
                                 <label for="firstName" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                                <div class="invalid-feedback">
-                                    Obrigatório.    
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <label for="lastName" class="form-label">Sobrenome</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <input type="text" class="form-control" id="firstName" placeholder="Nome" value=""
+                                    required>
                                 <div class="invalid-feedback">
                                     Obrigatório.
                                 </div>
                             </div>
 
-                            <div class="col-12">
+                            <div class="col-sm-4">
+                                <label for="lastName" class="form-label">Sobrenome</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Sobrenome" value=""
+                                    required>
+                                <div class="invalid-feedback">
+                                    Obrigatório.
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="rg" class="form-label">RG</label>
+                                <input type="number" class="form-control" id="rg" placeholder="RG" required>
+                                <div class="invalid-feedback">
+                                    Obrigatório.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
                                 <label for="username" class="form-label">Usuário</label>
                                 <div class="input-group has-validation">
                                     <span class="input-group-text">@</span>
@@ -108,58 +129,63 @@
                                 </div>
                             </div>
 
-                            <div class="col-12">
+                            <div class="col-sm-3">
                                 <label for="email" class="form-label">E-mail</label>
-                                <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                                <input type="email" class="form-control" id="email" placeholder="seu@email.com"
+                                    required>
                                 <div class="invalid-feedback">
                                     Insira um endereço de e-mail válido.
                                 </div>
                             </div>
 
-                            <div class="col-sm-6">
-                                <label for="firstName" class="form-label">Senha</label>
-                                <input type="text" class="form-control" id="senha" placeholder="" value="" required>
+                            <div class="col-sm-3">
+                                <label for="password" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="password" placeholder="Senha" value=""
+                                    required>
                                 <div class="invalid-feedback">
                                     Obrigatório.
                                 </div>
                             </div>
 
-                            <div class="col-sm-6">
-                                <label for="lastName" class="form-label">Repita a senha</label>
-                                <input type="text" class="form-control" id="repeatSenha" placeholder="" value="" required>
+                            <div class="col-sm-3">
+                                <label for="confirmPassword" class="form-label">Confirmar senha</label>
+                                <input type="password" class="form-control" id="confirmPassword"
+                                    onchange="onChangeConfirmPassword()" placeholder="Confirmar Senha" value=""
+                                    required>
                                 <div class="invalid-feedback">
                                     Obrigatório.
                                 </div>
                             </div>
 
-                            <div class="col-12">
+                            <div class="col-sm-4">
                                 <label for="cep" class="form-label">CEP</label>
-                                <input type="text" class="form-control" id="cep" placeholder="" required>
+                                <input type="number" class="form-control" id="cep" placeholder="CEP" required>
                                 <div class="invalid-feedback">
                                     Número de CEP inválido.
                                 </div>
                             </div>
 
-                            <div class="col-12">
+                            <div class="col-sm-5">
                                 <label for="address" class="form-label">Endereço</label>
-                                <input type="text" class="form-control" id="endereco"
-                                    placeholder="Rua, logradouro, avenida..." required>
+                                <input type="text" class="form-control" id="endereco" placeholder="Rua, avenida, etc."
+                                    required>
                                 <div class="invalid-feedback">
                                     Por favor, insira um endereço válido.
                                 </div>
                             </div>
 
-                            <div class="col-sm-6">
+                            <div class="col-sm-3">
                                 <label for="address2" class="form-label">Número</label>
-                                <input type="text" class="form-control" id="address2" placeholder="" required>
+                                <input type="number" class="form-control" id="address2" placeholder="Número" required>
                                 <div class="invalid-feedback">
                                     Por favor, insira um endereço válido.
-                                </div> 
+                                </div>
                             </div>
 
-                            <div class="col-sm-6">
-                                <label for="address2" class="form-label">Complemento</label>
-                                <input type="text" class="form-control" id="address2" placeholder="" required>
+                            <div class="col-sm-3">
+                                <label for="address3" class="form-label">Complemento</label>
+                                <input type="text" class="form-control" id="address2" placeholder="Complemento"
+                                    required>
                                 <div class="invalid-feedback">
                                     Por favor, insira um endereço válido.
 
@@ -167,24 +193,24 @@
 
                             </div>
 
-                            <div class="col-12">
+                            <div class="col-sm-3">
                                 <label for="country" class="form-label">Bairro</label>
-                                <input type="text" class="form-control" id="bairro" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    Por favor, insira um endereço válido.
-                                    </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <label for="state" class="form-label">Cidade</label>
-                                <input type="text" class="form-control" id="cidade" placeholder="" required>
+                                <input type="text" class="form-control" id="bairro" placeholder="Bairro" required>
                                 <div class="invalid-feedback">
                                     Por favor, insira um endereço válido.
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+
+                            <div class="col-sm-3">
+                                <label for="state" class="form-label">Cidade</label>
+                                <input type="text" class="form-control" id="cidade" placeholder="Cidade" required>
+                                <div class="invalid-feedback">
+                                    Por favor, insira um endereço válido.
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
                                 <label for="state" class="form-label">Estado</label>
-                                <input type="text" class="form-control" id="estado" placeholder="" required>
+                                <input type="text" class="form-control" id="estado" placeholder="Estado" required>
                                 <div class="invalid-feedback">
                                     Por favor, insira um endereço válido.
                                 </div>
@@ -200,7 +226,8 @@
 
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" id="save-info">
-                            <label class="form-check-label" for="save-info">Concordo com o recebimento de e-mails com promoções e notícias sobre os produtos e serviços.</label>
+                            <label class="form-check-label" for="save-info">Concordo com o recebimento de e-mails com
+                                promoções e notícias sobre os produtos e serviços.</label>
                         </div>
 
                         <hr class="my-4">
@@ -210,21 +237,97 @@
                 </div>
             </div>
         </main>
-        <footer class="my-5 pt-5 text-muted text-center text-small">
-            <p class="mb-1">&copy; 2022 Todos os direitos reservados.</p>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">Políticas</a></li>
-                <li class="list-inline-item"><a href="#">Fale conosco</a></li>
-            </ul>
-        </footer>
     </div>
+    <div class="rodape">
+        <section class="">
+            <!-- Footer -->
+            <footer class="text-center text-white" style="background-color: #0a4275;">
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
 
-    <script src="js/script.js"></script>
+
+
+                    <!-- Section: CTA -->
+                    <section class="">
+                        <p class="d-flex justify-content-center align-items-center">
+                            <span class="me-3">Register for free</span>
+                            <button type="button" class="btn btn-outline-light btn-rounded">
+                                Sign up!
+                            </button>
+                        </p>
+                    </section>
+                    <!-- Section: CTA -->
+                </div>
+                <!-- Grid container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="">Internet Empresarial</a>
+                    </li>
+                    <li class="has-children">Telefonia
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="">Wipfone</a>
+                            </li>
+                            <li>
+                                <a href="">Central telefônica</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-children">Data Center
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="">Servidores, colocation e cloud</a>
+                            </li>
+                            <li>
+                                <a href="">Hospedagens</a>
+                            </li>
+                            <li>
+                                <a href="">E-mail marketing</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">Videoconferência</a>
+                    </li>
+                </ul>
+
+
+
+
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2022 Copyright:
+                    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+                crossorigin="anonymous"></script>
+            <script src="js/cadastro.js"></script>
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </body>
 
 </html>
