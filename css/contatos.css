@@ -7,6 +7,16 @@
   position: relative;
 }
 
+
+
+.nome{
+float:center;
+position:center;
+}
+
+
+
+
 .our-team .picture {
   display: inline-block;
   height: 130px;
