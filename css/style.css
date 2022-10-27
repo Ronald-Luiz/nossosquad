@@ -218,7 +218,8 @@ h2{
 }
 
 .light2{
-  float:left;
+  float:center;
+  position: center;
 }
 
 
