@@ -32,7 +32,7 @@ rec.addEventListener('click',(event) =>{
   if(ml == "admin@gmail.com" ){
      swal("um link de recuperação de senha foi enviado ao seu email");
   }else{
-    swal('insira um e-mail válido');
+    swal("insira um e-mail válido");
     
   }
 })
