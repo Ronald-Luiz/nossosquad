@@ -21,7 +21,10 @@ body {
 }
 
 
-
+.nome{
+float:center;
+position:center;
+}
 
 .card-text{
   color: rgb(85, 82, 82);
