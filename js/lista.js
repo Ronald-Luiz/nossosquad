@@ -2,29 +2,21 @@
 document.querySelector('#crc').addEventListener('click', (e) => {
     e.preventDefault();
         let x;
-     if(document.querySelector('#usuario').value.length == 0){
+     if(document.querySelector('#nome').value.length == 0){
         x = "Por favor digite o nome do usuario";
         msgAlert(x,false);
-     }else if(document.querySelector('#email').value.length == 0){
+     }else if(document.querySelector('#mail').value.length == 0){
         x = "Por favor digite o email";
         msgAlert(x,false);
-     }else if(document.querySelector('#password').value.length == 0){
+     }else if(document.querySelector('#telefone').value.length == 0){
         x = "Por favor digite a senha";
         msgAlert(x,false);
-     }else if(document.querySelector('#confirm_password').value.length == 0){ 
+     }else if(document.querySelector('#mensagem').value.length == 0){ 
         x = "Por favor digite a confirmação de senha";
         msgAlert(x,false);
-    }else if(document.querySelector('#rg').value.length == 0){ 
-        x = "Por favor digite o RG";
-        msgAlert(x,false);
-    }else if(document.querySelector('#cpf').value.length == 0){ 
-        x = "Por favor digite o CPF";
-        msgAlert(x,false);
-    }else if(document.querySelector('#cep').value.length == 0){ 
-        x = "Por favor digite o CEP";
-        msgAlert(x,false);
+
     }else{
-        x = "Cadastro feito com sucesso!";
+        x = "Obrigado, entraremos em contato em breve!";
         msgAlert(x,true);
 
 
