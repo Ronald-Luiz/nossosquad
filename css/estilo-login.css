@@ -17,7 +17,7 @@ body {
   margin-bottom: 5;
   margin: 0 auto;
   margin-top: 150px;
-  background-color: #c3c9cc;
+  background-color:LightGrey; 
   border-radius: 5px;
   text-align: center;
 }
@@ -45,7 +45,7 @@ body {
   border-top-right-radius: 5;
 }
 .botao{
-  background-color: LightGrey;
+  background-color: Grey;
   border: none;
   color: white;
   padding: 15px 80px;
