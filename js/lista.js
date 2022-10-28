@@ -1,5 +1,5 @@
 
-document.querySelector('#btn').addEventListener('click', (e) => {
+document.querySelector('#crc').addEventListener('click', (e) => {
     e.preventDefault();
         let x;
      if(document.querySelector('#usuario').value.length == 0){
