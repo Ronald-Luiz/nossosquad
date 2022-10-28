@@ -1,23 +1,23 @@
 
 document.querySelector('#crc').addEventListener('click', (e) => {
     e.preventDefault();
-        let x;
+        
      if(document.querySelector('#nome').value.length == 0){
-        x = "Por favor digite o nome do usuario";
-        msgAlert(x,false);
+        swal("Por favor digite seu nome");
+        
+     }else if(document.querySelector('#tel').value.length == 0){
+        swal("Por favor digite seu telefone");
+       
      }else if(document.querySelector('#mail').value.length == 0){
-        x = "Por favor digite o email";
-        msgAlert(x,false);
-     }else if(document.querySelector('#telefone').value.length == 0){
-        x = "Por favor digite a senha";
-        msgAlert(x,false);
+        swal("Por favor digite seu e-mail");
+        
      }else if(document.querySelector('#mensagem').value.length == 0){ 
-        x = "Por favor digite a confirmação de senha";
-        msgAlert(x,false);
+        swal("Por favor digite sua mensagem");
+       
 
     }else{
-        x = "Obrigado, entraremos em contato em breve!";
-        msgAlert(x,true);
+        swal("Obrigado, entraremos em contato em breve!");
+        
 
 
 
@@ -43,23 +43,13 @@ document.querySelector('#crc').addEventListener('click', (e) => {
 
 
 
-//var btnenv = document.getElementById('telefone');
-
-//btnenv.addEventListener('click', () =>{
-
-//If(btnenv ===''){
-
-//alert ("preencha todos os campos");
 
 
-//}else{
+    }
 
 
 
-//swal("obrigado pelo contato, em breve entraremos em contato");
-
-
-//}
+});
 
 
   
@@ -93,4 +83,4 @@ document.querySelector('#crc').addEventListener('click', (e) => {
 //btnenv.addEventListener('click', () =>{
 
    // swal("obrigado pelo contato, em breve entraremos em contato");
-//})
+//}
