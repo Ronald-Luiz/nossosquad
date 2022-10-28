@@ -1,9 +1,9 @@
 Function validar{
 
-var btnenv = document.getElementById('crc');
+var btnenv = document.getElementById('telefone');
 btnenv.addEventListener('click', () =>{
 
-If(nome.value ==""){
+If(btnenv.value ==""){
 
 
 
