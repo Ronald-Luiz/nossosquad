@@ -84,104 +84,111 @@
     </header>
     <main class="form-signin w-100 m-auto">
 
-        <form class="form-signin">
-            <img src="img/login.svg" > 
-            <h1>Login</h1> 
-            <input type="text" class="form-control" placeholder="Usuario" name="login" required> <br>
-            <label for="inputPassword"></label> <br>
-            <input type="password" class="form-control" placeholder="Senha" name="senha" required>
-            <div class="checkbox mb-3"></div></div><br>
-            <a class="recuperacao" href="recuperacao2.html">Esqueceu sua Senha?</a> <br>  <br>
-            <a href="cadastro2.html">Cadastre-se</a>
-            <button class="botao" type="button" onclick="Login()">Entrar</button><br>
-            <a href="index.html">Voltar ao Inicio</a>
+        <section>
+            <h2>Contato</h2>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+                <label>Email</label>
+                <input type="email" name="name" placeholder="Digite seu email" autocomplete="off" required>
+                <label>Mensagem</label>
+                <textarea name="message" cols="30" rows="10" placeholder="digite sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+    
+                <input type="hidden" name="accessKey" value="92bd4ce5-011e-4aec-99f9-e5674fd9a992">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+            </form>
+    
+        </section>
     </main>
     <div class="rodape">
-      <section class="">
-        <!-- Footer -->
-        <footer class="text-center text-white" style="background-color: #0a4275;">
-          <!-- Grid container -->
-          <div class="container p-4 pb-0">
-  
-  
-  
-  
-            <!-- Section: CTA -->
-            <section class="">
-              <p class="d-flex justify-content-center align-items-center">
-                <span class="me-3">Ronald, Patrick, Luan, Vaildeison, Geovani </span><br> 
-                
-              </p>
-              <a href="cadastro2.html"<button type="button" class="btn btn-outline-light btn-rounded">
-                Inscrever-se
-              </button></a> 
-            </section>
-            <!-- Section: CTA -->
-          </div>
-          <!-- Grid container -->
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-          <ul class="list-unstyled">
-            <li>
-              <a href="">Internet Empresarial</a>
-            </li>
-            <li class="has-children">Telefonia
-              <ul class="list-unstyled">
-                <li>
-                  <a href="">Wipfone</a>
-                </li>
-                <li>
-                  <a href="">Central telefônica</a>
-                </li>
-              </ul>
-            </li>
-            <li class="has-children">Data Center
-              <ul class="list-unstyled">
-                <li>
-                  <a href="">Servidores, colocation e cloud</a>
-                </li>
-                <li>
-                  <a href="">Hospedagens</a>
-                </li>
-                <li>
-                  <a href="">E-mail marketing</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="" target="_blank">Videoconferência</a>
-            </li>
-          </ul>
-  
-  
-  
-  
-          <!-- Copyright -->
-          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2022 Copyright Programadores Cariocas
-            
-          </div>
-          <!-- Copyright -->
-        </footer>
-        <!-- Footer -->
-      </section>
-    </div>
-    </div>
+        <section class="">
+          <!-- Footer -->
+          <footer class="text-center text-white" style="background-color: #0a4275;">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+    
+    
+    
+    
+              <!-- Section: CTA -->
+              <section class="">
+                <p class="d-flex justify-content-center align-items-center">
+                  <span class="me-3">Ronald, Patrick, Luan, Vaildeison, Geovani </span><br> 
+                  
+                </p>
+                <a href="cadastro2.html"<button type="button" class="btn btn-outline-light btn-rounded">
+                  Inscrever-se
+                </button></a> 
+              </section>
+              <!-- Section: CTA -->
+            </div>
+            <!-- Grid container -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="">Internet Empresarial</a>
+              </li>
+              <li class="has-children">Telefonia
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="">Wipfone</a>
+                  </li>
+                  <li>
+                    <a href="">Central telefônica</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="has-children">Data Center
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="">Servidores, colocation e cloud</a>
+                  </li>
+                  <li>
+                    <a href="">Hospedagens</a>
+                  </li>
+                  <li>
+                    <a href="">E-mail marketing</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="" target="_blank">Videoconferência</a>
+              </li>
+            </ul>
+    
+    
+    
+    
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2022 Copyright Programadores Cariocas
+              
+            </div>
+            <!-- Copyright -->
+          </footer>
+          <!-- Footer -->
+        </section>
+      </div>
+      </div>
   
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   
