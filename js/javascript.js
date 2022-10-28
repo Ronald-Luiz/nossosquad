@@ -40,6 +40,26 @@ rec.addEventListener('click',(event) =>{
   }
 })
 
+let pg = document.getElementById('pk');
+pg.addEventListener('click', () =>{
+  document.getElementById('lkj').style.display = "block";
+
+})
+
+let telk = document.getElementById('kl');
+telk.addEventListener('click', (event) => {
+event.preventDefault();
+let vtel = document.getElementById('telxd').value;
+if(vtel == 2199997777){
+  swal("um sms foi enviado com as devidas instruções");
+}else{
+  swal("insira no formato solicitado");
+}
+
+
+})
+
+
 
 
   

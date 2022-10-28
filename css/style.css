@@ -21,10 +21,7 @@ body {
 }
 
 
-.nome{
-float:center;
-position:center;
-}
+
 
 .card-text{
   color: rgb(85, 82, 82);
@@ -65,7 +62,7 @@ h5{
 
 h3{
   font-family: Poppins-Regular, sans-serif;
- 
+  float:right;
   word-break: break-word;
 }
 
@@ -213,13 +210,12 @@ h2{
 
 .light{
   color:#014da2;
-  float:center;
+  float:left;
   
 }
 
 .light2{
-  float:center;
-  position: center;
+  float:left;
 }
 
 
@@ -253,8 +249,7 @@ h4{
   
 
 
-  float:center;
-  position:center;
+  float:left;
   color: rgb(85, 82, 82);
   text-align: center;
 }
@@ -826,20 +821,11 @@ overflow: hippen;
 }
   }
 
-.containerForm {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  padding: 40px;
+
+
+#lkj{
+  display: none;
 }
-
-
-
-
-
 
 
 
