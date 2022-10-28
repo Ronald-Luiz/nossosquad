@@ -90,7 +90,7 @@ form button:hover{
 .btn{
     
     text-decoration: none;
-    color: #101026;
+    color: gray;
     font-size: 18px;
     transition: all 0.5;
 }
