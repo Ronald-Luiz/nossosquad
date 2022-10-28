@@ -7,12 +7,12 @@ function Login() {
   if (usuario == "admin" && senha == "admin") {
 
     
-    //Swal.fire({  
-      //icon: 'success',
-      //title: 'Logado com sucesso!',
-      //showConfirmButton: false,
-      //timer: 100
-   // });
+   /* Swal.fire({  
+      icon: 'success',
+      title: 'Logado com sucesso!',
+      showConfirmButton: false,
+      timer: 100
+    }); */
 
     window.location = "index.html";
     done = 1;
@@ -33,9 +33,9 @@ rec.addEventListener('click',(event) =>{
   let mec = "insira um e-mail válido";
   let ml = document.getElementById('xp').value;
   if(ml == "admin@gmail.com" ){
-    alert(msg);
+    swal(msg);
   }else{
-    alert(mec);
+    swal(mec);
     
   }
 })
