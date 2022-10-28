@@ -11,7 +11,7 @@ If(btnenv.value ==""){
 alert ("preencha todos os campos");
 
 
-}eles{
+}else{
 
 
 
