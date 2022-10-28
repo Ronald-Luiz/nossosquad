@@ -2,7 +2,7 @@ var btnenv = document.getElementById('telefone');
 
 btnenv.addEventListener('click', () =>{
 
-If(btnenv ==''){
+If(btnenv ===''){
 
 
 
