@@ -7,12 +7,12 @@ function Login() {
   if (usuario == "admin" && senha == "admin") {
 
     
-   /* Swal.fire({  
-      icon: 'success',
-      title: 'Logado com sucesso!',
-      showConfirmButton: false,
-      timer: 100
-    }); */
+    //Swal.fire({  
+      //icon: 'success',
+      //title: 'Logado com sucesso!',
+      //showConfirmButton: false,
+      //timer: 100
+   // });
 
     window.location = "index.html";
     done = 1;
@@ -33,14 +33,19 @@ rec.addEventListener('click',(event) =>{
   let mec = "insira um e-mail válido";
   let ml = document.getElementById('xp').value;
   if(ml == "admin@gmail.com" ){
-    swal(msg);
+    alert(msg);
   }else{
-    swal(mec);
+    alert(mec);
     
   }
 })
 
+
 let pg = document.getElementById('pk');
+if(pg.clicked){
+    document.getElementById('lkj').style.display = "block";
+}
+  
 pg.addEventListener('click', () =>{
   document.getElementById('lkj').style.display = "block";
 
@@ -49,23 +54,17 @@ pg.addEventListener('click', () =>{
 let telk = document.getElementById('kl');
 telk.addEventListener('click', (event) => {
 event.preventDefault();
+let jj = "um sms foi enviado com as devidas instruções";
+let kk = "insira no formato solicitado";
 let vtel = document.getElementById('telxd').value;
 if(vtel == 2199997777){
-  swal("um sms foi enviado com as devidas instruções");
+  alert(jj);
 }else{
-  swal("insira no formato solicitado");
+  alert(kk);
 }
 
 
-})
-
-
-
-
-  
-
-
-
+}) 
 
 
 

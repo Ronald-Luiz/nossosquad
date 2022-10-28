@@ -21,7 +21,10 @@ body {
 }
 
 
-
+.nome{
+float:center;
+position:center;
+}
 
 .card-text{
   color: rgb(85, 82, 82);
@@ -62,7 +65,7 @@ h5{
 
 h3{
   font-family: Poppins-Regular, sans-serif;
-  float:right;
+ 
   word-break: break-word;
 }
 
@@ -196,7 +199,7 @@ nav {
 
 .rodape{
  
-  margin-top: 300px;
+  margin-top: 200px;
 }
 
 
@@ -210,12 +213,13 @@ h2{
 
 .light{
   color:#014da2;
-  float:left;
+  float:center;
   
 }
 
 .light2{
-  float:left;
+  float:center;
+  position: center;
 }
 
 
@@ -249,7 +253,8 @@ h4{
   
 
 
-  float:left;
+  float:center;
+  position:center;
   color: rgb(85, 82, 82);
   text-align: center;
 }
@@ -821,11 +826,20 @@ overflow: hippen;
 }
   }
 
-
-
-#lkj{
-  display: none;
+.containerForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 40px;
 }
+
+
+
+
+
 
 
 

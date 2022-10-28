@@ -3,9 +3,17 @@ rec.addEventListener('click',(event) =>{
   event.preventDefault();
   let ml = document.getElementById('xp').value;
   if(ml == "admin@gmail.com" ){
-     swal("um link de recuperação de senha foi enviado ao seu email");
+
+    swal({
+      icon: "success",
+    });
+
+     
   }else{
-    swal('insira um e-mail válido');
+    
+    swal({
+      icon: "success",
+    });
     
   }
 })

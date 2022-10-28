@@ -14,7 +14,7 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-
+  <link href="css/estilo-login.css" rel="stylesheet">
 
 </head>
 
@@ -58,12 +58,12 @@
           </button>
           <button class="btn btn-outline-dark">
             <li>
-              <a href="login.html" style="color:white">login</a>
+              <a href="login2.html" style="color:white">login</a>
               </i>
           </button>
           <button class="btn btn-outline-dark">
             <li>
-              <a href="cadastro.html" style="color:white">Cadastrar</a>
+              <a href="cadastro2.html" style="color:white">Cadastrar</a>
               </i>
           </button>
         </ul>
@@ -83,70 +83,102 @@
     </header>
     <main class="form-signin w-100 m-auto">
 
-      <div class="container py-3">
-      <div id="all">
-        <div id="login-box">
-          <div id="login-header">
-            <form>
-              <img class="mb-4"
-                src="img/login.svg"
-                alt="" width="52" height="297">
-              <h1 class="h3 mb-3 fw-normal">Faça login no sistema</h1>
-          </div><br>
-          <div id="login-inputs">Login:<r>
-            <input type="text" placeholder="Digite seu usuário" name="usuario" class="form-control" id="floatingInput">
-            <br>Senha:<br>
-            <input type="password" placeholder="Digite sua senha" name="senha" class="form-control" id="floatingInput">
-            <label>
-              <input type="checkbox" value="remember-me"> Remember me
-            </label>
-
-          </div>
-          <br>
-          <div id="enviar">
-            <input type="button" onclick="Login()" class="btn btn-outline-secondary" value="Login"><br>
-            <br><a href="recuperacao.html">Esqueceu a sua senha?</a>
-            <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
-            </form>
-          </div>
-        </div>
-      </div>
-
-
-
-      
-    </div>
+        <form class="form-signin">
+            <img src="img/login.svg" > 
+            <h1>Login</h1> 
+            <input type="text" class="form-control" placeholder="Usuario" name="login" required> <br>
+            <label for="inputPassword"></label> <br>
+            <input type="password" class="form-control" placeholder="Senha" name="senha" required>
+            <div class="checkbox mb-3"></div></div><br>
+            <a class="recuperacao" href="recuperacao2.html">Esqueceu sua Senha?</a> <br>  <br>
+            <button class="botao" type="button" onclick="Login()">Entrar</button><br>
+            <a href="index.html">Voltar ao Inicio</a>
     </main>
-  <div class="rodape">
-    <section class="">
-      <!-- Footer -->
-      <footer class="text-center text-white" style="background-color: #0a4275;">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-          <!-- Section: CTA -->
-          <section class="">
-            <p class="d-flex justify-content-center align-items-center">
-              <span class="me-3">Register for free</span>
-              <button type="button" class="btn btn-outline-light btn-rounded">
-                Sign up!
-              </button>
-            </p>
-          </section>
-          <!-- Section: CTA -->
-        </div>
-        <!-- Grid container -->
+    <div class="rodape">
+        <section class="">
+          <!-- Footer -->
+          <footer class="text-center text-white" style="background-color: #0a4275;">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
     
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright:
-          <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->
-      </footer>
-      <!-- Footer -->
-    </section>
-
-</div> 
+    
+    
+    
+              <!-- Section: CTA -->
+              <section class="">
+                <p class="d-flex justify-content-center align-items-center">
+                  <span class="me-3">Register for free</span>
+                  <button type="button" class="btn btn-outline-light btn-rounded">
+                    Sign up!
+                  </button>
+                </p>
+              </section>
+              <!-- Section: CTA -->
+            </div>
+            <!-- Grid container -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="">Internet Empresarial</a>
+              </li>
+              <li class="has-children">Telefonia
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="">Wipfone</a>
+                  </li>
+                  <li>
+                    <a href="">Central telefônica</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="has-children">Data Center
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="">Servidores, colocation e cloud</a>
+                  </li>
+                  <li>
+                    <a href="">Hospedagens</a>
+                  </li>
+                  <li>
+                    <a href="">E-mail marketing</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="" target="_blank">Videoconferência</a>
+              </li>
+            </ul>
+    
+    
+    
+    
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2022 Copyright:
+              <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+          <!-- Footer -->
+        </section>
+      </div>
+      </div>
   
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   
@@ -157,6 +189,7 @@
     integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/javascript.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
 
 </body>
 
